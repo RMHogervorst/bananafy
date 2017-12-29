@@ -1,0 +1,18 @@
+---
+title: "Add a dancing banana to your images"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+In this project I will make a function that uses magick to add a dancing banana
+gif to every image. 
+
+This is directly from the magick vignette
+
+- check if file is an image
+- find dimensions of image
+- scale banana gif
+- add gif to image 
