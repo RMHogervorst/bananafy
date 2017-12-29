@@ -32,4 +32,5 @@ if(debug) print(offset_value)
 frames <- lapply(as.list(front), function(x) image_composite(image_in, x, offset = offset_value))
 
 result <- image_animate(image_join(frames), fps = 10)
+message("writing bananafied image to", args[[2]])
 image_write(image = result, path = args[[2]])
